@@ -71,5 +71,53 @@ border-radius:40px;
 background:#00e5ff;
 color:black;
 font-weight:600;
+  .background-glow{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+background:
+radial-gradient(circle at 20% 20%, rgba(0,229,255,.25), transparent 30%),
+radial-gradient(circle at 80% 30%, rgba(140,82,255,.25), transparent 30%),
+radial-gradient(circle at 50% 80%, rgba(0,255,180,.15), transparent 35%);
+animation: floatGlow 10s ease-in-out infinite;
+}
+
+@keyframes floatGlow{
+0%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-30px);
+}
+100%{
+transform:translateY(0px);
+}
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero-content h1{
+background:linear-gradient(
+90deg,
+#00e5ff,
+#8c52ff
+);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.btn{
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 0 30px rgba(0,229,255,.6);
+}
 text-decoration:none;
 }
