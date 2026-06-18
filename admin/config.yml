@@ -6,20 +6,32 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "skills"
-    label: "Skills"
+  - name: "site"
+    label: "Site Content"
     files:
-      - file: "skills.md"
+
+      - file: "content/about.md"
+        label: "About"
+        name: "about"
+        fields:
+          - { label: "About Text", name: "body", widget: "text" }
+
+      - file: "content/skills.md"
         label: "Skills"
         name: "skills"
         fields:
-          - { label: "Skills List", name: "body", widget: "markdown" }
+          - { label: "Skills", name: "body", widget: "markdown" }
 
-  - name: "projects"
-    label: "Projects"
-    files:
-      - file: "projects.md"
+      - file: "content/projects.md"
         label: "Projects"
         name: "projects"
         fields:
-          - { label: "Projects List", name: "body", widget: "markdown" }
+          - { label: "Projects", name: "body", widget: "markdown" }
+
+      - file: "content/contact.md"
+        label: "Contact Info"
+        name: "contact"
+        fields:
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "GitHub", name: "github", widget: "string" }
+          - { label: "LinkedIn", name: "linkedin", widget: "string" }
