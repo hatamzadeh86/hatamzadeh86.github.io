@@ -43,6 +43,28 @@
 </section>
 
 <section id="contact">
+  <section id="contact">
+  <h2>Contact</h2>
+
+  <p id="email"></p>
+  <p id="github"></p>
+  <p id="linkedin"></p>
+</section>
+
+<script>
+async function loadContact() {
+  const res = await fetch('content/contact.md');
+  const text = await res.text();
+
+  const lines = text.split("\n");
+
+  document.getElementById("email").innerText = lines[0];
+  document.getElementById("github").innerText = lines[1];
+  document.getElementById("linkedin").innerText = lines[2];
+}
+
+loadContact();
+</script>
   <h2>Contact</h2>
   <p>Email: your@email.com</p>
   <p>GitHub: github.com/yourname</p>
