@@ -4,9 +4,8 @@ const skills = [
 "Artificial Intelligence",
 "Data Science",
 "Git & GitHub",
-"HTML",
-"CSS",
-"JavaScript"
+"Pytorch",
+"Deep Learning"
 ];
 
 const container = document.getElementById("skills-container");
