@@ -1,1 +1,3 @@
-
+- Portfolio Website - My personal developer website
+- GitHub Projects - My coding work collection
+- AI Experiment - Machine learning project
